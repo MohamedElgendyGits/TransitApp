@@ -15,6 +15,7 @@ import com.android.transitapp.R;
 import com.android.transitapp.data.entity.Route;
 import com.android.transitapp.data.entity.Segment;
 import com.android.transitapp.data.modes.TravelModes;
+import com.android.transitapp.utils.TextUtils;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -43,6 +44,9 @@ public class RouteListAdapter extends RecyclerView.Adapter<RouteListAdapter.Data
 
         @BindView(R.id.textView_list_item_price)
         TextView priceTextView;
+
+        @BindView(R.id.textView_list_item_total_duration)
+        TextView totalRouteDurationTextView;
 
 
         public DataObjectHolder(View itemView) {
@@ -89,6 +93,7 @@ public class RouteListAdapter extends RecyclerView.Adapter<RouteListAdapter.Data
             holder.priceTextView.setText(routeModel.getPrice().toString());
         }
 
+        holder.totalRouteDurationTextView.setText(routeModel.getRouteDuration()+" "+TextUtils.getString(R.string.minutes));
     }
 
     private View createSegmentView(Segment segment) {

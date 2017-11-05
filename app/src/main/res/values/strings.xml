@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TransitApp</string>
+    <string name="minutes">Minutes</string>
+    <string name="stops">Stops</string>
 </resources>

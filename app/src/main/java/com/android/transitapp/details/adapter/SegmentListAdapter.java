@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.android.transitapp.R;
 import com.android.transitapp.data.entity.Segment;
 import com.android.transitapp.data.modes.TravelModes;
+import com.android.transitapp.utils.TextUtils;
 
 import java.util.ArrayList;
 
@@ -32,8 +33,8 @@ public class SegmentListAdapter extends RecyclerView.Adapter<SegmentListAdapter.
 
     public static class DataObjectHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        @BindView(R.id.textView_list_item_segment_type)
-        TextView segmentTypeTextView;
+        @BindView(R.id.textView_list_item_segment_stops)
+        TextView segmentStopsTextView;
 
         @BindView(R.id.imageView_list_item_segment_image)
         AppCompatImageView segmentImageView;
@@ -54,14 +55,14 @@ public class SegmentListAdapter extends RecyclerView.Adapter<SegmentListAdapter.
 
         public void showText() {
             int parentHeight = ((View) segmentImageView.getParent()).getHeight();
-            float scale = (parentHeight - segmentTypeTextView.getHeight()) / (float) segmentImageView.getHeight();
+            float scale = (parentHeight - segmentStopsTextView.getHeight()) / (float) segmentImageView.getHeight();
             segmentImageView.setPivotX(segmentImageView.getWidth() * 0.5f);
             segmentImageView.setPivotY(0);
             segmentImageView.animate().scaleX(scale)
                     .withEndAction(new Runnable() {
                         @Override
                         public void run() {
-                            segmentTypeTextView.setVisibility(View.VISIBLE);
+                            segmentStopsTextView.setVisibility(View.VISIBLE);
                             segmentImageView.setColorFilter(Color.BLACK);
                         }
                     })
@@ -71,7 +72,7 @@ public class SegmentListAdapter extends RecyclerView.Adapter<SegmentListAdapter.
 
         public void hideText() {
             segmentImageView.setColorFilter(ContextCompat.getColor(segmentImageView.getContext(), R.color.blackIconTint));
-            segmentTypeTextView.setVisibility(View.INVISIBLE);
+            segmentStopsTextView.setVisibility(View.INVISIBLE);
             segmentImageView.animate().scaleX(1f).scaleY(1f)
                     .setDuration(200)
                     .start();
@@ -96,7 +97,7 @@ public class SegmentListAdapter extends RecyclerView.Adapter<SegmentListAdapter.
     public void onBindViewHolder(SegmentListAdapter.DataObjectHolder holder, int position) {
 
         Segment segmentModel = mDataSet.get(position);
-        holder.segmentTypeTextView.setText(segmentModel.getTravelMode());
+        holder.segmentStopsTextView.setText(segmentModel.getStops().size() + " " + TextUtils.getString(R.string.stops));
 
         holder.segmentImageView.setColorFilter(R.color.blackIconTint);
         holder.segmentImageView.setImageResource(getIcon(segmentModel));

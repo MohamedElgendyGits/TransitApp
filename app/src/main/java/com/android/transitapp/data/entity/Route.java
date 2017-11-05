@@ -70,4 +70,14 @@ public class Route {
     public void setPrice(@Nullable Price price) {
         this.price = price;
     }
+
+    public int getRouteDuration(){
+
+        int totalDuration = 0;
+        for(Segment segment : segments){
+            totalDuration += segment.getSegmentDuration();
+        }
+        return totalDuration;
+    }
+
 }

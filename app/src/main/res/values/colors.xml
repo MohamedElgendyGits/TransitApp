@@ -13,10 +13,8 @@
     <color name="icons">#FFFFFF</color>
     <color name="divider">#BDBDBD</color>
 
-
     <color name="blackIconTint">#000000</color>
-
-
+    <color name="grayIconTint">#757575</color>
 
     <!-- bus gradient -->
     <color name="gradientBus_c1">#3453d1</color>
