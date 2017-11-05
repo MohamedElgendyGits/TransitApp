@@ -1,4 +1,4 @@
-package com.android.transitapp.data.entity;
+package com.android.transitapp.base.data.entity;
 
 import android.support.annotation.Nullable;
 

@@ -10,10 +10,11 @@ import android.view.View;
 
 import com.android.transitapp.R;
 import com.android.transitapp.application.TransitConstants;
+import com.android.transitapp.base.data.entity.Route;
+import com.android.transitapp.base.data.entity.Segment;
 import com.android.transitapp.base.view.BaseActivity;
 import com.android.transitapp.application.custom.SegmentCustomView;
-import com.android.transitapp.data.entity.Route;
-import com.android.transitapp.data.entity.Segment;
+
 import com.android.transitapp.details.adapter.SegmentListAdapter;
 import com.android.transitapp.utils.JsonUtil;
 import com.yarolegovich.discretescrollview.DiscreteScrollView;

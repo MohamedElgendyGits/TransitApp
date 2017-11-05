@@ -17,8 +17,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.android.transitapp.R;
-import com.android.transitapp.data.entity.Segment;
-import com.android.transitapp.data.modes.TravelModes;
+import com.android.transitapp.base.data.entity.Segment;
+import com.android.transitapp.base.data.modes.TravelModes;
+
 
 /**
  * Created by Mohamed Elgendy.

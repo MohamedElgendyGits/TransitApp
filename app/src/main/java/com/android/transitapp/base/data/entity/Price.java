@@ -1,6 +1,4 @@
-package com.android.transitapp.data.entity;
-
-import android.support.annotation.Nullable;
+package com.android.transitapp.base.data.entity;
 
 import com.google.gson.annotations.SerializedName;
 

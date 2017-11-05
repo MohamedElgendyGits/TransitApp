@@ -52,10 +52,7 @@ dependencies {
 
     // picasso image library
     compile "com.squareup.picasso:picasso:$project.picasso"
-
-    // carousel horizontal layout
-    compile 'com.azoft.carousellayoutmanager:carousel:1.2.1'
-
+    
     // DiscreteScrollView
     compile 'com.yarolegovich:discrete-scrollview:1.3.2'
 

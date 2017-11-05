@@ -1,4 +1,4 @@
-package com.android.transitapp.data.modes;
+package com.android.transitapp.base.data.modes;
 
 /**
  * Created by Mohamed Elgendy.

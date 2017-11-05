@@ -1,6 +1,7 @@
-package com.android.transitapp.data.types;
+package com.android.transitapp.base.data.types;
 
-import com.android.transitapp.data.types.parent.RouteType;
+import com.android.transitapp.base.data.types.parent.RouteType;
+
 
 /**
  * Created by Mohamed Elgendy.

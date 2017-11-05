@@ -14,8 +14,8 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.android.transitapp.R;
+import com.android.transitapp.base.data.entity.Route;
 import com.android.transitapp.base.view.BaseActivity;
-import com.android.transitapp.data.entity.Route;
 import com.android.transitapp.details.DetailActivity;
 import com.android.transitapp.main.view.adapter.RouteListAdapter;
 import com.android.transitapp.main.viewmodel.MainActivityViewModel;

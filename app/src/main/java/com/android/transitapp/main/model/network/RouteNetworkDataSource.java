@@ -6,12 +6,12 @@ import android.content.Context;
 
 
 import com.android.transitapp.application.AppExecutors;
-import com.android.transitapp.data.entity.DataResponse;
-import com.android.transitapp.data.entity.Price;
-import com.android.transitapp.data.entity.Route;
-import com.android.transitapp.data.entity.RouteProperties;
-import com.android.transitapp.data.entity.Segment;
-import com.android.transitapp.data.types.parent.RouteType;
+import com.android.transitapp.base.data.entity.DataResponse;
+import com.android.transitapp.base.data.entity.Price;
+import com.android.transitapp.base.data.entity.Route;
+import com.android.transitapp.base.data.entity.RouteProperties;
+import com.android.transitapp.base.data.entity.Segment;
+import com.android.transitapp.base.data.types.parent.RouteType;
 import com.android.transitapp.utils.InjectorUtils;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

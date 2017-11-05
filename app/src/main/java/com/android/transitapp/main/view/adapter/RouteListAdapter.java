@@ -12,9 +12,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.android.transitapp.R;
-import com.android.transitapp.data.entity.Route;
-import com.android.transitapp.data.entity.Segment;
-import com.android.transitapp.data.modes.TravelModes;
+import com.android.transitapp.base.data.entity.Route;
+import com.android.transitapp.base.data.entity.Segment;
+import com.android.transitapp.base.data.modes.TravelModes;
 import com.android.transitapp.utils.TextUtils;
 import com.squareup.picasso.Picasso;
 

@@ -3,7 +3,7 @@ package com.android.transitapp.main.viewmodel;
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.ViewModel;
 
-import com.android.transitapp.data.entity.Route;
+import com.android.transitapp.base.data.entity.Route;
 import com.android.transitapp.main.model.RouteRepository;
 import com.android.transitapp.main.view.MainActivity;
 

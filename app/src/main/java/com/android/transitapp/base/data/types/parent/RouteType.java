@@ -1,4 +1,4 @@
-package com.android.transitapp.data.types.parent;
+package com.android.transitapp.base.data.types.parent;
 
 /**
  * Created by Mohamed Elgendy.

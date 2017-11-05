@@ -3,11 +3,7 @@ package com.android.transitapp.utils;
 import android.content.Context;
 
 import com.android.transitapp.application.AppExecutors;
-import com.android.transitapp.data.types.BikeSharingType;
-import com.android.transitapp.data.types.CarSharingType;
-import com.android.transitapp.data.types.PrivateBikeType;
-import com.android.transitapp.data.types.PublicTransportType;
-import com.android.transitapp.data.types.TaxiType;
+import com.android.transitapp.base.data.types.*;
 import com.android.transitapp.main.model.RouteRepository;
 import com.android.transitapp.main.model.network.RouteNetworkDataSource;
 import com.android.transitapp.main.viewmodel.MainViewModelFactory;
