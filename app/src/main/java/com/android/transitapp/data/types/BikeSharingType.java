@@ -31,8 +31,4 @@ public class BikeSharingType extends RouteType {
         this.availableBikes = availableBikes;
     }
 
-    @Override
-    public String printClassName() {
-        return this.getClass().getSimpleName();
-    }
 }

@@ -22,9 +22,4 @@ public class TaxiType extends RouteType {
     public void setCompanies(ArrayList<Company> companies) {
         this.companies = companies;
     }
-
-    @Override
-    public String printClassName() {
-        return this.getClass().getSimpleName();
-    }
 }

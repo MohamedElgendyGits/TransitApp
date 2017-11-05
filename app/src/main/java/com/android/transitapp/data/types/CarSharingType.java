@@ -112,8 +112,4 @@ public class CarSharingType extends RouteType {
         this.doors = doors;
     }
 
-    @Override
-    public String printClassName() {
-        return this.getClass().getSimpleName();
-    }
 }

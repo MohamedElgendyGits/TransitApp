@@ -4,11 +4,17 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.util.DisplayMetrics;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * Created by Mohamed Elgendy.
  */
 
 public class Conversions {
+
+    private static final String DATE_FORMAT = "yyyy-MM-dd'T'HH:mm:ss";
 
     /**
      * This method converts dp unit to equivalent pixels, depending on device density.
@@ -36,6 +42,26 @@ public class Conversions {
         DisplayMetrics metrics = resources.getDisplayMetrics();
         float dp = px / ((float)metrics.densityDpi / DisplayMetrics.DENSITY_DEFAULT);
         return dp;
+    }
+
+    /**
+     * This method converts string date to Date Object.
+     *
+     * @param stringDate A value of the date in string format
+     * @return A Date value to represent the passed stringDate
+     */
+    public static Date convertToDate(String stringDate){
+
+        Date date = null;
+        try {
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat(DATE_FORMAT);
+            date = simpleDateFormat.parse(stringDate);
+        }
+        catch (ParseException ex) {
+            System.out.println("Exception "+ex);
+        }
+
+        return date;
     }
 
 }

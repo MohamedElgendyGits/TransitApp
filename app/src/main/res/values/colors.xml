@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">@color/primary</color>
-    <color name="colorPrimaryDark">@color/primary_dark</color>
-    <color name="colorAccent">@color/accent</color>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
 
     <color name="primary">#4CAF50</color>
     <color name="primary_dark">#388E3C</color>
@@ -12,5 +12,102 @@
     <color name="secondary_text">#757575</color>
     <color name="icons">#FFFFFF</color>
     <color name="divider">#BDBDBD</color>
+
+
+    <color name="blackIconTint">#000000</color>
+
+
+
+    <!-- bus gradient -->
+    <color name="gradientBus_c1">#3453d1</color>
+    <color name="gradientBus_c2">#6d69ff</color>
+    <color name="gradientBus_c3">#cd47c6</color>
+
+    <array name="gradientBus">
+        <item>@color/gradientBus_c1</item>
+        <item>@color/gradientBus_c2</item>
+        <item>@color/gradientBus_c3</item>
+    </array>
+
+    <!-- change gradient-->
+    <color name="gradientChange_c1">#62bff5</color>
+    <color name="gradientChange_c2">#61b3e5</color>
+    <color name="gradientChange_c3">#5d8fb2</color>
+
+    <array name="gradientChange">
+        <item>@color/gradientChange_c1</item>
+        <item>@color/gradientChange_c2</item>
+        <item>@color/gradientChange_c3</item>
+    </array>
+
+    <!-- cycling -->
+    <color name="gradientCycling_c1">#51bbf5</color>
+    <color name="gradientCycling_c2">#71c3ee</color>
+    <color name="gradientCycling_c3">#f3e5d2</color>
+
+    <array name="gradientCycling">
+        <item>@color/gradientCycling_c1</item>
+        <item>@color/gradientCycling_c2</item>
+        <item>@color/gradientCycling_c3</item>
+    </array>
+
+    <!-- driving -->
+    <color name="gradientDriving_c1">#5b64be</color>
+    <color name="gradientDriving_c2">#6084df</color>
+    <color name="gradientDriving_c3">#64a2ff</color>
+
+    <array name="gradientDriving">
+        <item>@color/gradientDriving_c1</item>
+        <item>@color/gradientDriving_c2</item>
+        <item>@color/gradientDriving_c3</item>
+    </array>
+
+    <!--parking -->
+    <color name="gradientParking_c1">#6d4fbe</color>
+    <color name="gradientParking_c2">#6c56be</color>
+    <color name="gradientParking_c3">#a189f1</color>
+
+    <array name="gradientParking">
+        <item>@color/gradientParking_c1</item>
+        <item>@color/gradientParking_c2</item>
+        <item>@color/gradientParking_c3</item>
+    </array>
+
+
+    <!-- setup -->
+    <color name="gradientSetup_c1">#0085B5</color>
+    <color name="gradientSetup_c2">#006EBB</color>
+    <color name="gradientSetup_c3">#005EBF</color>
+
+    <array name="gradientSetup">
+        <item>@color/gradientSetup_c1</item>
+        <item>@color/gradientSetup_c2</item>
+        <item>@color/gradientSetup_c3</item>
+    </array>
+
+
+    <!-- subway -->
+    <color name="gradientSubway_c1">#954E4F</color>
+    <color name="gradientSubway_c2">#40578F</color>
+    <color name="gradientSubway_c3">#005EBF</color>
+
+    <array name="gradientSubway">
+        <item>@color/gradientSubway_c1</item>
+        <item>@color/gradientSubway_c2</item>
+        <item>@color/gradientSubway_c3</item>
+    </array>
+
+
+    <!-- walking -->
+    <color name="gradientWalking_c1">#7BA1C8</color>
+    <color name="gradientWalking_c2">#357AC2</color>
+    <color name="gradientWalking_c3">#005EBF</color>
+
+    <array name="gradientWalking">
+        <item>@color/gradientWalking_c1</item>
+        <item>@color/gradientWalking_c2</item>
+        <item>@color/gradientWalking_c3</item>
+    </array>
+
 
 </resources>

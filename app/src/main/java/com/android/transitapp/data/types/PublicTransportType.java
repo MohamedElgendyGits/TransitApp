@@ -7,8 +7,4 @@ import com.android.transitapp.data.types.parent.RouteType;
  */
 
 public class PublicTransportType extends RouteType {
-    @Override
-    public String printClassName() {
-        return this.getClass().getSimpleName();
-    }
 }

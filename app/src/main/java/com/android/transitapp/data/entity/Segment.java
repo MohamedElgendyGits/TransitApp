@@ -2,9 +2,11 @@ package com.android.transitapp.data.entity;
 
 import android.support.annotation.Nullable;
 
+import com.android.transitapp.utils.Conversions;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by Mohamed Elgendy.
@@ -114,5 +116,26 @@ public class Segment {
 
     public void setPolyline(@Nullable String polyline) {
         this.polyline = polyline;
+    }
+
+    public int getSegmentDuration(){
+
+        ArrayList<String> stopDates = new ArrayList<>();
+
+        for(Stop stop : stops){
+            stopDates.add(stop.getDate());
+        }
+
+        int segmentDuration = 0;
+        for(int i=stopDates.size()-1; i>=0; i--){
+            if(i == 0)
+                break;
+
+            long difference = Conversions.convertToDate(stopDates.get(i-1)).getTime() -
+                    Conversions.convertToDate(stopDates.get(i)).getTime();
+            segmentDuration += (int) Math.abs(TimeUnit.MILLISECONDS.toMinutes(difference));
+        }
+
+        return segmentDuration;
     }
 }
