@@ -7,6 +7,7 @@ Application architecture :
 Instead of using a package by layer approach, application structured by package per feature. This greatly improves readability and modularizes the app in a way that parts of it can be changed independently from each other. Each key feature of the app is in its own Java package
 
 *  Application follow Android Architecture Component along with MVVM.
+
 Android architecture components is new library by Google that has the aim to help us design application that are “robust, testable, and maintainable”. In a nutshell, this library helps us to better handle the persisting of data across lifecycle events and configuration changes, whilst also helping us to create a better architecture application and avoid bloated classes that are difficult to maintain and test.
 
 Application libraries : 
