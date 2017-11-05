@@ -11,7 +11,7 @@ Instead of using a package by layer approach, application structured by package 
 Android architecture components is new library by Google that has the aim to help us design application that are “robust, testable, and maintainable”. In a nutshell, this library helps us to better handle the persisting of data across lifecycle events and configuration changes, whilst also helping us to create a better architecture application and avoid bloated classes that are difficult to maintain and test.
 
 Application libraries : 
-* Android Architeture Components collection of libraries that help design robust, testable, and maintainable apps.
+* Android Architeture Components.
 * ButterKnife for injecting views
 * GSON for json parsing
 * retrofit for network calls
