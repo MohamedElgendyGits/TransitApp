@@ -1,4 +1,4 @@
-package com.android.transitapp.application;
+package com.android.transitapp.application.app;
 
 import android.app.Application;
 

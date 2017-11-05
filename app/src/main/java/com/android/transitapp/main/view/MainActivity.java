@@ -56,6 +56,9 @@ public class MainActivity extends BaseActivity implements LifecycleOwner , Route
         initializeViewModel();
     }
 
+    /**
+     * This method is for initializing all the views.
+     */
     private void initializeViews() {
 
         // initialize recyclerView
@@ -67,6 +70,9 @@ public class MainActivity extends BaseActivity implements LifecycleOwner , Route
         routesRecyclerView.setAdapter(routesAdapter);
     }
 
+    /**
+     * This method is for initializing the View Model by using the injector class factory and start observer on any changes.
+     */
     private void initializeViewModel() {
 
         showLoading();
@@ -82,6 +88,9 @@ public class MainActivity extends BaseActivity implements LifecycleOwner , Route
         });
     }
 
+    /**
+     * This method is for load routes and update the recycler view.
+     */
     private void loadRoutes(List<Route> routeModels) {
         routeModelList.clear();
         routesAdapter.notifyDataSetChanged();

@@ -1,34 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="100dp"
-    android:layout_height="116dp"
+    android:layout_width="@dimen/segment_card_view_width"
+    android:layout_height="@dimen/segment_card_view_height"
     android:layout_gravity="center"
-    android:layout_margin="4dp">
+    android:layout_margin="@dimen/item_segment_container_margin">
 
+    <!-- This layout defines the row layout for segment list -->
     <FrameLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:layout_margin="4dp"
+        android:layout_margin="@dimen/item_segment_container_margin"
         android:background="?android:selectableItemBackground"
         android:clickable="true">
 
+        <!-- A text view to show the number of stops for each segment -->
         <TextView
             android:id="@+id/textView_list_item_segment_stops"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center_horizontal"
-            android:layout_marginBottom="8dp"
-            android:paddingTop="4dp"
+            android:layout_marginBottom="@dimen/segment_text_view_margin"
+            android:paddingTop="@dimen/item_segment_container_margin"
             android:textAllCaps="true"
             android:textColor="@android:color/black"
-            android:textSize="12sp"
+            android:textSize="@dimen/item_segment_text_size"
             android:textStyle="bold"
             android:visibility="invisible"
              />
 
+        <!-- A image view to show the segment image -->
         <android.support.v7.widget.AppCompatImageView
             android:id="@+id/imageView_list_item_segment_image"
             android:layout_width="match_parent"

@@ -2,7 +2,7 @@ package com.android.transitapp.utils;
 
 import android.support.annotation.StringRes;
 
-import com.android.transitapp.application.TransitApp;
+import com.android.transitapp.application.app.TransitApp;
 
 /**
  * Created by Mohamed Elgendy.

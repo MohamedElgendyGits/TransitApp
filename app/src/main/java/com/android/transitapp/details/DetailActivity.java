@@ -5,22 +5,17 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.AppCompatImageView;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.Toast;
 
 import com.android.transitapp.R;
 import com.android.transitapp.application.TransitConstants;
 import com.android.transitapp.base.view.BaseActivity;
-import com.android.transitapp.custom.SegmentCustomView;
+import com.android.transitapp.application.custom.SegmentCustomView;
 import com.android.transitapp.data.entity.Route;
 import com.android.transitapp.data.entity.Segment;
 import com.android.transitapp.details.adapter.SegmentListAdapter;
-import com.android.transitapp.main.view.adapter.RouteListAdapter;
 import com.android.transitapp.utils.JsonUtil;
-import com.azoft.carousellayoutmanager.CarouselLayoutManager;
-import com.azoft.carousellayoutmanager.CarouselZoomPostLayoutListener;
 import com.yarolegovich.discretescrollview.DiscreteScrollView;
 import com.yarolegovich.discretescrollview.transform.ScaleTransformer;
 

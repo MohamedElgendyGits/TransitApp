@@ -5,7 +5,7 @@ import android.arch.lifecycle.MutableLiveData;
 import android.content.Context;
 
 
-import com.android.transitapp.base.AppExecutors;
+import com.android.transitapp.application.AppExecutors;
 import com.android.transitapp.data.entity.DataResponse;
 import com.android.transitapp.data.entity.Price;
 import com.android.transitapp.data.entity.Route;
@@ -41,6 +41,13 @@ import static com.android.transitapp.application.TransitConstants.JSON_TYPE;
 
 public class RouteNetworkDataSource {
 
+    /**
+     <p>
+     * This Network data source is designed retrieve data from network call using API endpoints
+     *
+     * NOTE for business case of this application the json response is already locally grabbed from ASSETS Folder
+     */
+
     // For Singleton instantiation
     private static final Object LOCK = new Object();
     private static RouteNetworkDataSource sInstance;
@@ -68,6 +75,12 @@ public class RouteNetworkDataSource {
         return sInstance;
     }
 
+    /**
+     * this method for retrieving all routes from the json response by
+     * running this task in network executor
+     *
+     * @return the LiveData of list of routes
+     */
     public LiveData<List<Route>> getRoutes() {
 
         mExecutors.networkIO().execute(new Runnable() {
@@ -81,6 +94,12 @@ public class RouteNetworkDataSource {
         return mRoutes;
     }
 
+    /**
+     * this method for parsing the routes from the json file and map to
+     * DataResponse object
+     *
+     * @return the DataResponse object
+     */
     private DataResponse parseRoutes() {
 
         final HashMap<String, Class> routePropertiesTypes = InjectorUtils.provideRouteTypes();
@@ -101,6 +120,11 @@ public class RouteNetworkDataSource {
         return dataResponse;
     }
 
+    /**
+     * this method for loading json response from asset folder
+     *
+     * @return json string
+     */
     public String loadJSONFromAsset() {
         String json = null;
         try {
@@ -117,6 +141,14 @@ public class RouteNetworkDataSource {
         return json;
     }
 
+    /**
+     * this method for custom deserialization for the json response as
+     * it has dynamic response results so we have to manually deserialize
+     *
+     * @param routePropertiesTypes  all available types to be parsed
+     * @param json  json element to be deserialize
+     * @return the Route Object
+     */
     private Route deserializeRoutesFromResponse(HashMap<String, Class> routePropertiesTypes, JsonElement json) {
 
         Route route = new Route();

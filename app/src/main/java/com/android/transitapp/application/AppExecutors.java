@@ -1,4 +1,4 @@
-package com.android.transitapp.base;
+package com.android.transitapp.application;
 
 import android.os.Handler;
 import android.os.Looper;

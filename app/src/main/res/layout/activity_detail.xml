@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- This layout defines the detail screen and will display all segments in each route -->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <!-- A layout view to show type of the segment and time duration -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <com.android.transitapp.custom.SegmentCustomView
+        <com.android.transitapp.application.custom.SegmentCustomView
             android:id="@+id/segment_custom_view"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -18,31 +20,33 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="120dp"
+            android:layout_height="@dimen/bottom_recycler_view_height"
             android:background="@android:color/white"
             android:gravity="bottom"
             android:orientation="horizontal"/>
 
     </LinearLayout>
 
+    <!-- A image view to show back to home -->
     <android.support.v7.widget.AppCompatImageView
         android:id="@+id/home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="32dp"
-        android:padding="8dp"
+        android:layout_marginLeft="@dimen/home_margin"
+        android:layout_marginRight="@dimen/home_margin"
+        android:layout_marginTop="@dimen/home_top_margin"
+        android:padding="@dimen/home_margin"
         android:clickable="true"
         android:background="?android:attr/selectableItemBackground"
         app:srcCompat="@drawable/ic_arrow_back_black_24dp"
         android:tint="@android:color/white" />
 
+    <!-- A recycler view to all segments for each route -->
     <com.yarolegovich.discretescrollview.DiscreteScrollView
         android:id="@+id/segments_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:layout_marginBottom="50dp" />
+        android:layout_marginBottom="@dimen/bottom_recycler_view_margin" />
 
 </FrameLayout>

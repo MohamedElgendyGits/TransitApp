@@ -18,6 +18,11 @@ import java.util.List;
  */
 public class MainActivityViewModel extends ViewModel {
 
+    /**
+     <p>
+     * ViewModel should not know about which method to retrieve routes either local or remotely
+     * he should only ask the repository and it is responsibility to retrieve the routes from which data source
+     */
     private final RouteRepository mRepository;
     private final LiveData<List<Route>> mRoutes;
 

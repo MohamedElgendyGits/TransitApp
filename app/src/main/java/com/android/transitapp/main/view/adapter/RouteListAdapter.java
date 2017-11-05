@@ -96,16 +96,27 @@ public class RouteListAdapter extends RecyclerView.Adapter<RouteListAdapter.Data
         holder.totalRouteDurationTextView.setText(routeModel.getRouteDuration()+" "+TextUtils.getString(R.string.minutes));
     }
 
+    /**
+     * This method is for creating dynamic segment cards to be added to the route row
+     */
     private View createSegmentView(Segment segment) {
 
         AppCompatImageView image = new AppCompatImageView(context);
-        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(150, 150);
-        lp.setMargins(10,10,10,10);
+        int width = (int) (context.getResources().getDimension(R.dimen.segment_image_view_width) /
+                context.getResources().getDisplayMetrics().density);
+        int height = (int) (context.getResources().getDimension(R.dimen.segment_image_view_height) /
+                context.getResources().getDisplayMetrics().density);
+
+        int margin = (int) (context.getResources().getDimension(R.dimen.segment_image_view_margin) /
+                context.getResources().getDisplayMetrics().density);
+
+        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(width, height);
+        lp.setMargins(margin,margin,margin,margin);
         image.setLayoutParams(lp);
         image.setColorFilter(Color.parseColor(segment.getColor()));
         image.setImageResource(getIcon(segment));
 
-        /* //most of icons urls that attached to the json response are broken so i will load them locally
+        /* *** NOTE *** most of icons urls that attached to the json response are broken so i will load them locally
         Log.d("IMAGE-URL",segment.getIconUrl());
 
         Picasso.with(context)
@@ -117,6 +128,9 @@ public class RouteListAdapter extends RecyclerView.Adapter<RouteListAdapter.Data
         return image;
     }
 
+    /**
+     * This method is for return each icon related to segment type
+     */
     private int getIcon(Segment segment) {
 
         if (segment.getTravelMode().equals(TravelModes.bus.name())) {

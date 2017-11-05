@@ -1,4 +1,4 @@
-package com.android.transitapp.custom;
+package com.android.transitapp.application.custom;
 
 import android.animation.ArgbEvaluator;
 import android.content.Context;
@@ -24,6 +24,12 @@ import com.android.transitapp.data.modes.TravelModes;
  * Created by Mohamed Elgendy.
  */
 
+
+/**
+ * Custom layout to show every segment view in fancy way.
+ * <p>
+ * Grouping all views together and enlarge the duration text
+ */
 public class SegmentCustomView extends LinearLayout {
 
     private Paint gradientPaint;

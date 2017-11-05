@@ -2,15 +2,35 @@
 <resources>
 
     <!-- activity_main.xml -->
-    <dimen name="recycler_view_margin">8dp</dimen>
-    <dimen name="progress_bar_width">42dp</dimen>
-    <dimen name="progress_bar_height">42dp</dimen>
+    <dimen name="recycler_view_margin">@dimen/_8sdp</dimen>
+    <dimen name="progress_bar_width">@dimen/_42sdp</dimen>
+    <dimen name="progress_bar_height">@dimen/_42sdp</dimen>
+
+    <!-- activity_detail.xml -->
+    <dimen name="bottom_recycler_view_height">@dimen/_120sdp</dimen>
+    <dimen name="home_top_margin">@dimen/_32sdp</dimen>
+    <dimen name="home_margin">@dimen/_8sdp</dimen>
+    <dimen name="bottom_recycler_view_margin">@dimen/_50sdp</dimen>
 
     <!-- list_item_route.xml -->
-    <dimen name="card_view_margin_layout">1dp</dimen>
-    <dimen name="card_view_elevation">3dp</dimen>
-    <dimen name="text_view_margin">5dp</dimen>
-    <dimen name="text_view_size">15sp</dimen>
-    <dimen name="segment_view_margin">10dp</dimen>
+    <dimen name="card_view_margin_layout">@dimen/_1sdp</dimen>
+    <dimen name="card_view_elevation">@dimen/_3sdp</dimen>
+    <dimen name="text_view_margin">@dimen/_5sdp</dimen>
+    <dimen name="text_view_size">@dimen/_12ssp</dimen>
+
+    <!-- list_item_segment.xml -->
+    <dimen name="segment_view_margin">@dimen/_10sdp</dimen>
+    <dimen name="item_segment_container_margin">@dimen/_4sdp</dimen>
+    <dimen name="segment_text_view_margin">@dimen/_8sdp</dimen>
+    <dimen name="segment_card_view_width">@dimen/_100sdp</dimen>
+    <dimen name="segment_card_view_height">@dimen/_116sdp</dimen>
+    <dimen name="item_segment_text_size">@dimen/_12ssp</dimen>
+
+    <!-- list_item_segment_image.xml -->
+    <dimen name="segment_image_view_width">@dimen/_80sdp</dimen>
+    <dimen name="segment_image_view_height">@dimen/_80sdp</dimen>
+    <dimen name="segment_image_view_margin">@dimen/_10sdp</dimen>
+
+
 
 </resources>

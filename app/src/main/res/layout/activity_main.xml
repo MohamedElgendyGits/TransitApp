@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- A recycler view to show list of routes -->
     <android.support.v7.widget.RecyclerView
         android:id="@+id/routes_recycler_view"
         android:layout_width="match_parent"

@@ -2,8 +2,7 @@ package com.android.transitapp.utils;
 
 import android.content.Context;
 
-import com.android.transitapp.application.TransitConstants;
-import com.android.transitapp.base.AppExecutors;
+import com.android.transitapp.application.AppExecutors;
 import com.android.transitapp.data.types.BikeSharingType;
 import com.android.transitapp.data.types.CarSharingType;
 import com.android.transitapp.data.types.PrivateBikeType;
@@ -13,7 +12,6 @@ import com.android.transitapp.main.model.RouteRepository;
 import com.android.transitapp.main.model.network.RouteNetworkDataSource;
 import com.android.transitapp.main.viewmodel.MainViewModelFactory;
 
-import java.util.Date;
 import java.util.HashMap;
 
 import static com.android.transitapp.application.TransitConstants.KEY_BIKE_SHARING_TYPE;
@@ -55,11 +53,4 @@ public class InjectorUtils {
 
         return routePropertiesTypes;
     }
-
-       /*
-    public static DetailViewModelFactory provideDetailViewModelFactory(Context context, Date date) {
-        SunshineRepository repository = provideRepository(context.getApplicationContext());
-        return new DetailViewModelFactory(repository, date);
-    }*/
-
 }
